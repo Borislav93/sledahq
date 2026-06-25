@@ -119,21 +119,16 @@ h1{
     transition:.25s;
 }
 
-.button:hover{
+.button:hover {
+    transform: translateY(-2px);
+    border-color: rgba(255,255,255,.35);
 
-    transform:translateY(-2px);
-
-    box-shadow:
-
-        0 0 20px rgba(255,255,255,.25),
-
-        -12px 0 20px rgba(255,255,255,.18),
-
-        0 0 20px rgba(34,197,94,.28),
-
-        12px 0 20px rgba(239,68,68,.28);
+ box-shadow:
+    -42px 18px 0 -8px rgba(255,255,255,.95),
+     0 18px 0 -8px rgba(34,197,94,.95),
+     42px 18px 0 -8px rgba(239,68,68,.95),
+     0 0 30px rgba(79,140,255,.25);
 }
-
 .features{
 
     display:flex;
