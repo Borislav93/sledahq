@@ -101,33 +101,47 @@ h1{
 }
 
 .button{
-
+    position:relative;
     display:inline-block;
-
     text-decoration:none;
-
     color:white;
-
     padding:16px 28px;
-
     border-radius:999px;
-
     border:1px solid #2E2E34;
-
     background:#111113;
+    transition:.25s;
+    overflow:hidden;
+}
 
+.button::after{
+    content:"";
+    position:absolute;
+    left:18px;
+    right:18px;
+    bottom:4px;
+    height:3px;
+    border-radius:999px;
+    background:linear-gradient(
+        90deg,
+        white 0%,
+        white 33%,
+        #22c55e 33%,
+        #22c55e 66%,
+        #ef4444 66%,
+        #ef4444 100%
+    );
+    opacity:0;
     transition:.25s;
 }
 
-.button:hover {
-    transform: translateY(-2px);
-    border-color: rgba(255,255,255,.35);
+.button:hover{
+    transform:translateY(-2px);
+    border-color:rgba(255,255,255,.35);
+    box-shadow:0 0 28px rgba(79,140,255,.25);
+}
 
- box-shadow:
-    -42px 18px 0 -8px rgba(255,255,255,.95),
-     0 18px 0 -8px rgba(34,197,94,.95),
-     42px 18px 0 -8px rgba(239,68,68,.95),
-     0 0 30px rgba(79,140,255,.25);
+.button:hover::after{
+    opacity:1;
 }
 .features{
 
