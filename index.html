@@ -13,18 +13,40 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      overflow: hidden;
+      font-family: Arial, Helvetica, sans-serif;
     }
 
-    img {
-      max-width: 100%;
-      max-height: 100vh;
-      object-fit: contain;
+    .hero {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      background-image: url("assets/hero.png");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .badge {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: white;
+      border: 1px solid rgba(255,255,255,0.25);
+      padding: 12px 18px;
+      border-radius: 999px;
+      background: rgba(0,0,0,0.35);
+      backdrop-filter: blur(10px);
+      font-size: 14px;
+      letter-spacing: 2px;
     }
   </style>
 </head>
 
 <body>
-  <img src="assets/hero.png" alt="SLEDA - Find it first. Coming soon." />
+  <main class="hero">
+    <div class="badge">SLEDAHQ.COM IS LIVE</div>
+  </main>
 </body>
 </html>
-
