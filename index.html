@@ -4,49 +4,34 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SLEDA</title>
-
-  <style>
-    body {
-      margin: 0;
-      background: #050608;
-      min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      overflow: hidden;
-      font-family: Arial, Helvetica, sans-serif;
-    }
-
-    .hero {
-      position: relative;
-      width: 100%;
-      height: 100vh;
-      background-image: url("assets/hero.png");
-      background-size: contain;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-
-    .badge {
-      position: fixed;
-      bottom: 24px;
-      left: 50%;
-      transform: translateX(-50%);
-      color: white;
-      border: 1px solid rgba(255,255,255,0.25);
-      padding: 12px 18px;
-      border-radius: 999px;
-      background: rgba(0,0,0,0.35);
-      backdrop-filter: blur(10px);
-      font-size: 14px;
-      letter-spacing: 2px;
-    }
-  </style>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
-  <main class="hero">
-    <div class="badge">SLEDAHQ.COM IS LIVE</div>
+  <main class="page">
+    <section class="hero">
+      <div class="eyebrow">PRIVATE BETA • COMING SOON</div>
+
+      <h1>SLEDA</h1>
+
+      <p class="tagline">Find it first.</p>
+
+      <p class="subtext">
+        The intelligent way to track anything online before everyone else sees it.
+      </p>
+
+      <div class="actions">
+        <a href="mailto:hello@sledahq.com" class="button">Request Early Access</a>
+      </div>
+
+      <div class="features">
+        <span>Marketplace alerts</span>
+        <span>Price drops</span>
+        <span>Rare finds</span>
+      </div>
+    </section>
   </main>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
