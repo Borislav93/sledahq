@@ -3,31 +3,35 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>SLEDA</title>
+
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
   <nav class="nav">
-    <div class="nav-brand">
+    <a class="brand" href="#">
       <img src="assets/sleda-logo.png" alt="SLEDA logo" />
       <span>SLEDA</span>
-    </div>
+    </a>
 
     <div class="nav-links">
-      <a href="#">Features</a>
-      <a href="#">How it works</a>
-      <a href="#">About</a>
+      <a href="#features">Features</a>
+      <a href="#how">How it works</a>
+      <a href="#about">About</a>
     </div>
 
-    <a class="nav-button" href="mailto:hello@sledahq.com">Request Access</a>
+    <a class="nav-cta" href="mailto:hello@sledahq.com">
+      Request Access
+    </a>
   </nav>
 
   <main class="page">
     <section class="hero">
-      <img class="logo-mark" src="assets/sleda-logo.png" alt="SLEDA Logo" />
+      <img class="hero-logo" src="assets/sleda-logo.png" alt="SLEDA logo" />
 
-      <div class="eyebrow">PRIVATE BETA • COMING SOON</div>
+      <p class="eyebrow">PRIVATE BETA • COMING SOON</p>
 
       <h1>SLEDA</h1>
 
@@ -37,13 +41,12 @@
         Monitor Facebook Marketplace, eBay, Craigslist and more with real-time alerts.
       </p>
 
-      <div class="actions">
-        <a href="mailto:hello@sledahq.com" class="button">
-          Join the Waitlist <span>→</span>
-        </a>
-      </div>
+      <a class="main-button" href="mailto:hello@sledahq.com">
+        Join the Waitlist
+        <span>→</span>
+      </a>
 
-      <div class="marketplaces">
+      <div class="marketplaces" id="features">
         <span>Facebook Marketplace</span>
         <span>eBay</span>
         <span>Craigslist</span>
